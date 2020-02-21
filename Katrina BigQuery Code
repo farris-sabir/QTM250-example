@@ -1,0 +1,25 @@
+##Katrina BigQuery:
+SELECT
+  name, year,
+  SUM(number) AS total,
+FROM
+  `bigquery-public-data.usa_names.usa_1910_current`
+WHERE
+  name = "Katrina" AND year BETWEEN 1990 AND 2018
+GROUP BY
+  name, year
+ORDER BY
+  Year
+
+
+##K BigQuery:
+SELECT
+  year, gender,
+  SUM(number) AS total,
+FROM
+  `bigquery-public-data.usa_names.usa_1910_2013`
+  where gender = "F" AND name LIKE 'K%' AND year BETWEEN 1990 AND 2018
+  GROUP BY
+  year, gender
+ORDER BY
+year
