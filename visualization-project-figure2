@@ -1,10 +1,49 @@
-SELECT publication_date FROM qtm-250.movies_project.Movies WHERE mpaa_rating='R' ORDER BY publication_date DESC;
+SELECT 
+  publication_date 
+FROM 
+  qtm-250.movies_project.Movies 
+WHERE 
+  mpaa_rating='R' 
+ORDER BY 
+  publication_date DESC;
 #35 R rated movies in 2019
-SELECT publication_date FROM qtm-250.movies_project.Movies WHERE mpaa_rating='NC-17' ORDER BY publication_date DESC;
+
+SELECT 
+  publication_date 
+FROM 
+  qtm-250.movies_project.Movies 
+WHERE 
+  mpaa_rating='NC-17' 
+ORDER BY 
+  publication_date DESC;
 #0 NC-17 rated movies in 2019
-SELECT publication_date FROM qtm-250.movies_project.Movies WHERE mpaa_rating='PG-13' ORDER BY publication_date DESC;
+
+SELECT 
+  publication_date 
+FROM 
+  qtm-250.movies_project.Movies 
+WHERE 
+  mpaa_rating='PG-13' 
+ORDER BY 
+  publication_date DESC;
 #13 PG-13 rated movies in 2019
-SELECT publication_date FROM qtm-250.movies_project.Movies WHERE mpaa_rating='G' ORDER BY publication_date DESC;
+
+SELECT 
+  publication_date 
+FROM 
+  qtm-250.movies_project.Movies 
+WHERE 
+  mpaa_rating='G' 
+ORDER BY 
+  publication_date DESC;
 #1 G rated movie in 2019
-SELECT publication_date FROM qtm-250.movies_project.Movies WHERE mpaa_rating='Not Rated' ORDER BY publication_date DESC;
+
+SELECT 
+  publication_date 
+FROM 
+  qtm-250.movies_project.Movies 
+WHERE 
+  mpaa_rating='Not Rated' 
+ORDER BY 
+  publication_date DESC;
 #6 Not Rated movies in 201
